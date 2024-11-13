@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <div class="wrapper">
+                <div class="content1">
+                    <div class="menu">
+                        <a href="">HOME</a>
+                        <a href="">ABOUT</a>
+                        <a href="">MENU</a>
+                        <a href="">OFFERS</a>
+                        <a href="">CONTACT</a>
+                    </div>
+                    <div class="burger" id="burger">
+                        <button><i class="fas fa-bars"></i></button>
+
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="texte">
+                        <div class="logo"> <img src="../asset/image/Logo.png" alt=""></div>
+                        <div class="texteTitre">
+                            <h1>Mariachi</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corrupti totam ipsa
+                                error illo</p>
+                        </div>
+
+                        <button>ORDER NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="content3">
+            <div class="option">
+                <h1>Don't Miss our Menu!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam harum cum minus rem obcaecati.</p>
+                <button>SEE MENU</button>
+            </div>
+        </div>
+        <div class="content4">
+            <div class="slider">
+
+                <div><img src="../asset/image/content3.png" alt="Image 1"></div>
+
+                <div><img src="../asset/image/content3.png"" alt=" Image 2"></div>
+
+                <div><img src="../asset/image/content3.png"" alt=" Image 3"></div>
+            </div>
+
+        </div>
+        <div class="content5">
+            <div class="ImageContent5">
+                <img src="../asset/image/content5.png" alt="">
+            </div>
+            <div class="apropor">
+                <h1>About Mariachi</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eius quaerat hic libero impedit.</p>
+                <button>TELL MEMORE</button>
+            </div>
+        </div>
+        <div class="content6">
+            <div class="text">
+                <div class="chiffre"><h1>25%</h1></div>
+                <div class="discount"><h3>DISCOUNT</h3></div>
+                <div class="tacos"><h2>ON TACOS!</h2></div>
+            </div>
+            <div class="tacosBack">
+                <img src="../asset/image/background-tacos.png" alt="">
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="../asset/jquerry/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('.slider').slick({
+
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false
+
+
+            });
+
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#burger button").click(function () {
+
+                $(" .menu").slideToggle();
+
+            });
+            $(window).resize(function () {
+                if ($(window).width() > 488) {
+                    $(".menu").show();
+                } else {
+                    $(".menu").hide();
+                }
+            }).resize();
+        });
+
+    </script>
+</body>
+
+</html>
